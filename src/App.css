@@ -3,17 +3,25 @@
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
   font-family: "Nunito", sans-serif;
-  background: #0059ff;
+  /* background: #0059ff; */
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  /* align-content: center; */
+  height: 100vh;
+  background: red;
 }
 
 #quote-box {
-  margin: 10rem auto;
+  /* margin: 10rem auto; */
   width: 40rem;
+  align-self: center;
   padding: 3rem;
   border-radius: 5px;
   background: white;
