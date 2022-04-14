@@ -80,3 +80,10 @@ body {
 #new-quote:hover {
   opacity: 0.9;
 }
+
+@media (max-width: 450px) {
+  #quote-box {
+    width: 15rem;
+    padding: 1rem;
+  }
+}

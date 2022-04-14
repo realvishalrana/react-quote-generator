@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useState } from "react";
 import twitterIcon from "../svg/twitter.svg";
-// import tumblrIcon from "../svg/tumblr.svg";
 
 const Quotes = ({ changeColor }) => {
   const colorsArr = [
@@ -18,7 +17,9 @@ const Quotes = ({ changeColor }) => {
     "#890620",
     "#B6465F",
     "#8ACDEA",
+    "#FFB300",
   ];
+
   const [quote, setQuotes] = useState("title");
   const [author, setAuthor] = useState("");
   const [accentColor, setAccentColor] = useState("#4FC1FF");
@@ -69,11 +70,6 @@ const Quotes = ({ changeColor }) => {
               <img src={twitterIcon} alt="" />
             </span>
           </a>
-          {/* <a href="#" id="tumlr-quote">
-            <span>
-              <img src={tumblrIcon} alt="" />
-            </span>
-          </a> */}
         </div>
         <button onClick={handleClick} id="new-quote">
           New Quotes

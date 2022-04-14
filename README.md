@@ -1,3 +1,4 @@
-This is random quote machine for FreeCodeCamp.com's front end library certification.
+## The Random Quote Generator build using HTML, CSS, React, and API.
+## This application fetches a new random quote from an API, upon the click of a button, and displays it in the browser.
 
-https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-random-quote-machine
+
