@@ -14,8 +14,10 @@ body {
   display: flex;
   justify-content: center;
   /* align-content: center; */
-  height: 100vh;
-  background: red;
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 30px 0px;
+  /* background: red; */
 }
 
 #quote-box {
@@ -25,6 +27,14 @@ body {
   padding: 3rem;
   border-radius: 5px;
   background: white;
+}
+
+#quote-box p {
+  word-break: break-word;
+}
+
+.loading {
+  font-size: 1.5rem;
 }
 
 #text {

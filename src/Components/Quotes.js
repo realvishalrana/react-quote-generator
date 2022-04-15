@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useState } from "react";
 import twitterIcon from "../svg/twitter.svg";
+import { SpinnerRoundOutlined } from "spinners-react";
 
 const Quotes = ({ changeColor }) => {
   const colorsArr = [
@@ -23,9 +24,11 @@ const Quotes = ({ changeColor }) => {
   const [quote, setQuotes] = useState("title");
   const [author, setAuthor] = useState("");
   const [accentColor, setAccentColor] = useState("#4FC1FF");
-
+  const [loader, setLoader] = useState(true);
   useEffect(() => {
+    setLoader(true);
     getQuote();
+    setLoader(false);
   }, []);
 
   const getQuote = () => {
@@ -51,12 +54,16 @@ const Quotes = ({ changeColor }) => {
 
   return (
     <div id="quote-box">
-      <div id="text" style={{ color: accentColor }}>
-        <p>{quote}</p>
-        <div id="author">
-          <p>{author}</p>
+      {loader ? (
+        <div className="loading">Loading...</div>
+      ) : (
+        <div id="text" style={{ color: accentColor }}>
+          <p>{quote}</p>
+          <div id="author">
+            <p>{author}</p>
+          </div>
         </div>
-      </div>
+      )}
 
       <div id="buttons">
         <div className="social-media">
